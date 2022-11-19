@@ -23,7 +23,7 @@ const Header = () => (
           <button
             type="button"
             className="hamburger-button"
-            data-testid="hamburgerIconButton"
+            testid="hamburgerIconButton"
           >
             <GiHamburgerMenu className="hamburger-icon" />
           </button>
@@ -31,33 +31,32 @@ const Header = () => (
         className="popup-content"
       >
         {close => (
-          <>
-            <div className="popup-main-container">
-              <div className="popup-container">
-                <button
-                  type="button"
-                  className="close-button"
-                  data-testid="closeButton"
-                >
-                  <IoMdClose className="close-icon" onClick={() => close()} />
-                </button>
-                <ul className="link-items-container">
-                  <li>
-                    <Link className="link-item" to="/">
-                      <AiFillHome className="home-icon" />
-                      <h1 className="popup-home">Home</h1>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="link-item" to="/about">
-                      <BsInfoCircleFill className="info-icon" />
-                      <h1 className="popup-about">About</h1>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
+          <div className="popup-main-container">
+            <div className="popup-container">
+              <button
+                type="button"
+                className="close-icon-button"
+                testid="closeButton"
+                onClick={() => close()}
+              >
+                <IoMdClose className="close-icon" />
+              </button>
+              <ul className="link-items-container">
+                <li>
+                  <Link className="link-item" to="/">
+                    <AiFillHome className="home-icon" />
+                    <h1 className="popup-home">Home</h1>
+                  </Link>
+                </li>
+                <li>
+                  <Link className="link-item" to="/about">
+                    <BsInfoCircleFill className="info-icon" />
+                    <h1 className="popup-about">About</h1>
+                  </Link>
+                </li>
+              </ul>
             </div>
-          </>
+          </div>
         )}
       </Popup>
     </div>
