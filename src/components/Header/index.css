@@ -1,0 +1,123 @@
+/* Write your CSS here */
+.header-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid #dcdcdc;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  max-width: 1100px;
+}
+
+.page-logo {
+  width: 40px;
+}
+.hamburger-button {
+  padding: 0px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.hamburger-icon {
+  width: 30px;
+  height: 30px;
+}
+.popup-content {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+.popup-main-container {
+  display: flex;
+  justify-content: center;
+  min-height: 80vh;
+  padding-top: 20px;
+}
+.popup-container {
+  width: 90%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.close-button {
+  padding: 0px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.close-icon {
+  color: #616e7c;
+  width: 25px;
+  height: 25px;
+}
+.link-items-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0px;
+  list-style-type: none;
+}
+.link-item {
+  color: #12022f;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.home-icon {
+  width: 40px;
+  height: 40px;
+}
+.info-icon {
+  width: 30px;
+  height: 30px;
+}
+.popup-home {
+  font-size: 35px;
+  font-family: 'Roboto';
+  margin-left: 15px;
+}
+.popup-about {
+  font-size: 35px;
+  font-family: 'Roboto';
+  margin-left: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-logo {
+    width: 50px;
+  }
+  .hamburger-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .close-icon {
+    width: 35px;
+    height: 35px;
+  }
+  .home-icon {
+    width: 50px;
+    height: 50px;
+  }
+  .info-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .popup-home {
+    font-size: 45px;
+  }
+  .popup-about {
+    font-size: 45px;
+  }
+}
